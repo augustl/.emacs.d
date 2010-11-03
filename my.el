@@ -38,7 +38,6 @@
 
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "#f0f0f0")
-(custom-set-faces '(default ((t (:family "Inconsolata")))))
 (line-number-mode 1)
 (column-number-mode 1)
 
