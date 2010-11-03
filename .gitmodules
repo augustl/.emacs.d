@@ -1,0 +1,12 @@
+[submodule "rhtml"]
+	path = rhtml
+	url = git://github.com/eschulte/rhtml.git
+[submodule "modes/rhtml"]
+	path = modes/rhtml
+	url = git://github.com/eschulte/rhtml.git
+[submodule "modes/yaml"]
+	path = modes/yaml
+	url = git://github.com/yoshiki/yaml-mode.git
+[submodule "modes/lua"]
+	path = modes/lua
+	url = git://github.com/augustl/lua-mode.git
