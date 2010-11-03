@@ -4,4 +4,6 @@ Installing
 1. cd ~
 2. git clone git://github.com/augustl/.emacs.d.git
 3. cp .emacs.d/init.example.el .emacs.d/init.el
-4. Put custom stuff in the gitignored .emacs.d/init.el.
+4. cd .emacs.d
+5. git submodule update --init
+6. Put custom stuff in the gitignored .emacs.d/init.el.
