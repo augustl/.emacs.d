@@ -2,6 +2,7 @@
 (require 'ido)
 (ido-mode t)
 (setq ido-enable-flex-matching t)
+(setq ido-auto-merge-delay-time 999999)
 
 ; Enable vendored modes
 (setq dotfiles-dir (file-name-directory (or (buffer-file-name) load-file-name)))
