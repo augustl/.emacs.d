@@ -60,3 +60,8 @@
                              c-basic-offset 8
                              tab-width 8
                              indent-tabs-mode t)))
+
+(custom-set-faces
+ '(diff-added ((t (:foreground "chartreuse4"))))
+ '(diff-hunk-header ((t (:foreground "RoyalBlue1"))))
+ '(diff-removed ((t (:foreground "red")))))
