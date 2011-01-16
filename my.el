@@ -65,3 +65,6 @@
  '(diff-added ((t (:foreground "chartreuse4"))))
  '(diff-hunk-header ((t (:foreground "RoyalBlue1"))))
  '(diff-removed ((t (:foreground "red")))))
+
+; Deep parent indents in ruby-mode (i.e. multiline arrays/hashes)
+(custom-set-variables '(ruby-deep-indent-paren nil))
