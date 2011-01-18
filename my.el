@@ -20,6 +20,9 @@
 (require 'lua-mode)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 
+(add-to-list 'load-path (concat dotfiles-dir "/modes/apache"))
+(require 'apache-mode)
+
 ; Settings
 (setq visible-bell t)
 (global-auto-revert-mode)
