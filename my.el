@@ -36,7 +36,6 @@
 
 ; For emacs cocoa/gtk
 (tool-bar-mode -1)
-(menu-bar-mode -1)
 
 (custom-set-variables '(scroll-bar-mode (quote right)))
 
