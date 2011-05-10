@@ -13,3 +13,6 @@
 [submodule "modes/apache"]
 	path = modes/apache
 	url = git://github.com/augustl/apache-mode.git
+[submodule "modes/vcl"]
+	path = modes/vcl
+	url = git://github.com/augustl/vcl-mode.git

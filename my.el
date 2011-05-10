@@ -23,6 +23,9 @@
 (add-to-list 'load-path (concat dotfiles-dir "/modes/apache"))
 (require 'apache-mode)
 
+(add-to-list 'load-path (concat dotfiles-dir "/modes/vcl"))
+(require 'vcl-mode)
+
 ; Settings
 (setq visible-bell t)
 (global-auto-revert-mode)
