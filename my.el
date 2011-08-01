@@ -26,6 +26,9 @@
 (add-to-list 'load-path (concat dotfiles-dir "/modes/vcl"))
 (require 'vcl-mode)
 
+(add-to-list 'load-path (concat dotfiles-dir "/modes/js3-mode"))
+(autoload 'js3-mode "js3" nil t)
+
 ; Settings
 (setq visible-bell t)
 (global-auto-revert-mode)
@@ -43,9 +46,12 @@
 (custom-set-variables '(scroll-bar-mode (quote right)))
 
 (global-hl-line-mode 1)
-(set-face-background 'hl-line "#f0f0f0")
 (line-number-mode 1)
 (column-number-mode 1)
+(when window-system 
+  (add-to-list 'default-frame-alist '(background-color . "#000000")) 
+  (add-to-list 'default-frame-alist '(foreground-color . "#dddddd"))
+  (set-face-background 'hl-line "#222222"))
 
 
 (add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
