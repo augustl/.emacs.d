@@ -16,3 +16,6 @@
 [submodule "modes/vcl"]
 	path = modes/vcl
 	url = git://github.com/augustl/vcl-mode.git
+[submodule "modes/js3-mode"]
+	path = modes/js3-mode
+	url = git://github.com/thomblake/js3-mode.git
