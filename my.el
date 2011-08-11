@@ -29,6 +29,10 @@
 (add-to-list 'load-path (concat dotfiles-dir "/modes/js3-mode"))
 (autoload 'js3-mode "js3" nil t)
 
+(add-to-list 'load-path (concat dotfiles-dir "/extensions/recall-position"))
+(require 'recall-position)
+(global-set-key (kbd "C-c C-s") 'toggle-buffer-pos)
+
 ; Settings
 (setq visible-bell t)
 (global-auto-revert-mode)
