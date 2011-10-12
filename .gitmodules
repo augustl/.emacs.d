@@ -22,3 +22,9 @@
 [submodule "extensions/recall-position"]
 	path = extensions/recall-position
 	url = git://github.com/cjohansen/recall-position.el.git
+[submodule "modes/buster-mode"]
+	path = modes/buster-mode
+	url = git://gitorious.org/buster/buster-mode.git
+[submodule "modes/scala-mode"]
+	path = modes/scala-mode
+	url = git@augustl.com:scala-mode.git

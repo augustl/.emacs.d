@@ -33,6 +33,13 @@
 (require 'recall-position)
 (global-set-key (kbd "C-c C-s") 'toggle-buffer-pos)
 
+(add-to-list 'load-path (concat dotfiles-dir "/modes/buster-mode"))
+(require 'buster-mode)
+
+(add-to-list 'load-path (concat dotfiles-dir "/modes/scala-mode"))
+(require 'scala-mode)
+
+
 ; Settings
 (setq visible-bell t)
 (global-auto-revert-mode)
