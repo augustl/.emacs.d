@@ -13,9 +13,6 @@
 [submodule "modes/apache"]
 	path = modes/apache
 	url = git://github.com/augustl/apache-mode.git
-[submodule "modes/vcl"]
-	path = modes/vcl
-	url = git://github.com/augustl/vcl-mode.git
 [submodule "modes/js3-mode"]
 	path = modes/js3-mode
 	url = git://github.com/thomblake/js3-mode.git
@@ -28,3 +25,6 @@
 [submodule "modes/scala-mode"]
 	path = modes/scala-mode
 	url = git@augustl.com:scala-mode.git
+[submodule "modes/vcl"]
+	path = modes/vcl
+	url = git@git.augustl.com:vcl-mode.git
