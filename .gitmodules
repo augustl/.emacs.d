@@ -9,10 +9,10 @@
 	url = git://github.com/yoshiki/yaml-mode.git
 [submodule "modes/lua"]
 	path = modes/lua
-	url = git://github.com/augustl/lua-mode.git
+	url = git@git.augustl.com:lua-mode.git
 [submodule "modes/apache"]
 	path = modes/apache
-	url = git://github.com/augustl/apache-mode.git
+	url = git@git.augustl.com:apache-mode.git
 [submodule "modes/js3-mode"]
 	path = modes/js3-mode
 	url = git://github.com/thomblake/js3-mode.git
