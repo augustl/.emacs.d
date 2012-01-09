@@ -28,3 +28,6 @@
 [submodule "modes/vcl"]
 	path = modes/vcl
 	url = git@git.augustl.com:vcl-mode.git
+[submodule "modes/clojure-mode"]
+	path = modes/clojure-mode
+	url = git://github.com/technomancy/clojure-mode.git

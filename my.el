@@ -39,6 +39,9 @@
 (add-to-list 'load-path (concat dotfiles-dir "/modes/scala-mode"))
 (require 'scala-mode)
 
+(add-to-list 'load-path (concat dotfiles-dir "/modes/clojure-mode"))
+(require 'clojure-mode)
+
 
 ; Settings
 (setq visible-bell t)
