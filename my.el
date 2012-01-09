@@ -46,6 +46,7 @@
 (setq-default indent-tabs-mode nil)
 (setq inhibit-startup-screen t)
 (setq x-select-enable-clipboard t)
+(show-paren-mode 1)
 
 ; Disable ~foo backup files
 (setq backup-inhibited t)
