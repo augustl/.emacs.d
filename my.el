@@ -1,8 +1,14 @@
-; Enable bundled modes
+; ido, yay
 (require 'ido)
 (ido-mode t)
-(setq ido-enable-flex-matching t)
-(setq ido-auto-merge-delay-time 999999)
+(setq ido-enable-flex-matching t
+      ido-auto-merge-delay-time 999999
+      ido-enable-prefix nil
+      ido-auto-merge-work-directories-length nil
+      ido-create-new-buffer 'always
+      ido-use-filename-at-point 'guess
+      ido-use-virtual-buffers t
+      ido-handle-duplicate-virtual-buffers 2)
 
 ; Enable vendored modes
 (setq dotfiles-dir (file-name-directory (or (buffer-file-name) load-file-name)))
@@ -44,12 +50,20 @@
 
 
 ; Settings
-(setq visible-bell t)
+(require 'whitespace)
 (global-auto-revert-mode)
-(setq-default indent-tabs-mode nil)
-(setq inhibit-startup-screen t)
-(setq x-select-enable-clipboard t)
 (show-paren-mode 1)
+(setq
+ visible-bell t
+ inhibit-startup-screen t
+ whitespace-style '(face trailing lines-tail tabs)
+ whitespace-line-column 80
+ x-select-enable-clipboard t
+ indent-tabs-mode nil)
+
+(setq-default show-trailing-whitespace t)
+(set-default 'indicate-empty-lines t)
+(set-default 'indent-tabs-mode nil)
 
 ; Disable ~foo backup files
 (setq backup-inhibited t)
@@ -57,6 +71,11 @@
 
 ; For emacs cocoa/gtk
 (tool-bar-mode -1)
+
+(when window-system
+  (tooltip-mode -1)
+  (mouse-wheel-mode t)
+  (blink-cursor-mode -1))
 
 (custom-set-variables '(scroll-bar-mode (quote right)))
 
