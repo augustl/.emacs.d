@@ -48,6 +48,12 @@
 (add-to-list 'load-path (concat dotfiles-dir "/modes/clojure-mode"))
 (require 'clojure-mode)
 
+(add-to-list 'load-path (concat dotfiles-dir "/modes/coffee-mode"))
+(require 'coffee-mode)
+(add-hook 'coffee-mode-hook '(lambda ()(set (make-local-variable 'tab-width) 2)))
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+
 
 ; Settings
 (require 'whitespace)
