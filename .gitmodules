@@ -31,3 +31,6 @@
 [submodule "modes/clojure-mode"]
 	path = modes/clojure-mode
 	url = git://github.com/technomancy/clojure-mode.git
+[submodule "modes/coffee-mode"]
+	path = modes/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git
