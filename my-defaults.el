@@ -14,11 +14,11 @@
 (setq x-select-enable-clipboard t)
 
 ; Indent with spaces
-(setq indent-tabs-mode nil)
+(set-default 'indent-tabs-mode nil)
 
 ; Highlight unwanted whitespace
-(setq show-trailing-whitespace t)
-(setq indicate-empty-lines t)
+(setq-default show-trailing-whitespace t)
+(set-default 'indicate-empty-lines t)
 
 ; Disable ~foo backup files
 (setq backup-inhibited t)
