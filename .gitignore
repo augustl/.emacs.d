@@ -1,5 +1,5 @@
-auto-save-list/*
-tramp
-init.el
-session.*
+/auto-save-list/*
+/tramp
+/init.el
+/session.*
 /elpa
