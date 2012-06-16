@@ -25,9 +25,3 @@
 (require 'buster-mode)
 
 (add-to-list 'auto-mode-alist '("\\.jspx$" . html-mode))
-
-(when window-system
-  (add-to-list 'default-frame-alist '(background-color . "#000000"))
-  (add-to-list 'default-frame-alist '(foreground-color . "#dddddd"))
-  (set-face-background 'hl-line "#222222"))
-
