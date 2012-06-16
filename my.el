@@ -3,7 +3,7 @@
   (load-file (concat dotfiles-dir "/" name)))
 
 (augustl-load-file "my-defaults.el")
-(augustl-load-file "elpa-init.el")
+(augustl-load-file "setup/elpa.el")
 (augustl-load-file "setup/ido.el")
 (augustl-load-file "setup/diff.el")
 (augustl-load-file "setup/java.el")
