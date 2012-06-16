@@ -1,5 +1,6 @@
 (setq dotfiles-dir (file-name-directory (or (buffer-file-name) load-file-name)))
 (load-file (concat dotfiles-dir "/my-defaults.el"))
+(load-file (concat dotfiles-dir "/elpa-init.el"))
 
 ; ido, yay
 (require 'ido)
@@ -19,22 +20,8 @@
 (require 'rhtml-mode)
 (custom-set-faces '(erb-face ((t (:background nil)))))
 
-(add-to-list 'load-path (concat dotfiles-dir "/modes/yaml"))
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-
-(add-to-list 'load-path (concat dotfiles-dir "/modes/lua"))
-(require 'lua-mode)
-(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
-
-(add-to-list 'load-path (concat dotfiles-dir "/modes/apache"))
-(require 'apache-mode)
-
-(add-to-list 'load-path (concat dotfiles-dir "/modes/vcl"))
-(require 'vcl-mode)
-
-(add-to-list 'load-path (concat dotfiles-dir "/modes/js3-mode"))
-(autoload 'js3-mode "js3" nil t)
 
 (add-to-list 'load-path (concat dotfiles-dir "/extensions/recall-position"))
 (require 'recall-position)
@@ -43,19 +30,6 @@
 (add-to-list 'load-path (concat dotfiles-dir "/modes/buster-mode"))
 (require 'buster-mode)
 
-(add-to-list 'load-path (concat dotfiles-dir "/modes/scala-mode"))
-(require 'scala-mode)
-
-(add-to-list 'load-path (concat dotfiles-dir "/modes/clojure-mode"))
-(require 'clojure-mode)
-
-(add-to-list 'load-path (concat dotfiles-dir "/modes/coffee-mode"))
-(require 'coffee-mode)
-(add-hook 'coffee-mode-hook '(lambda ()(set (make-local-variable 'tab-width) 2)))
-(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
-(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
-
-(add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
 (add-to-list 'auto-mode-alist '("\\.jspx$" . html-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))

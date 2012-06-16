@@ -4,33 +4,9 @@
 [submodule "modes/rhtml"]
 	path = modes/rhtml
 	url = git://github.com/eschulte/rhtml.git
-[submodule "modes/yaml"]
-	path = modes/yaml
-	url = git://github.com/yoshiki/yaml-mode.git
-[submodule "modes/lua"]
-	path = modes/lua
-	url = git@git.augustl.com:lua-mode.git
-[submodule "modes/apache"]
-	path = modes/apache
-	url = git@git.augustl.com:apache-mode.git
-[submodule "modes/js3-mode"]
-	path = modes/js3-mode
-	url = git://github.com/thomblake/js3-mode.git
 [submodule "extensions/recall-position"]
 	path = extensions/recall-position
 	url = git://github.com/cjohansen/recall-position.el.git
 [submodule "modes/buster-mode"]
 	path = modes/buster-mode
 	url = git://gitorious.org/buster/buster-mode.git
-[submodule "modes/scala-mode"]
-	path = modes/scala-mode
-	url = git@augustl.com:scala-mode.git
-[submodule "modes/vcl"]
-	path = modes/vcl
-	url = git@git.augustl.com:vcl-mode.git
-[submodule "modes/clojure-mode"]
-	path = modes/clojure-mode
-	url = git://github.com/technomancy/clojure-mode.git
-[submodule "modes/coffee-mode"]
-	path = modes/coffee-mode
-	url = git://github.com/defunkt/coffee-mode.git
