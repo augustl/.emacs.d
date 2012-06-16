@@ -2,7 +2,7 @@
 (defun augustl-load-file (name)
   (load-file (concat dotfiles-dir "/" name)))
 
-(augustl-load-file "my-defaults.el")
+(augustl-load-file "setup/defaults.el")
 (augustl-load-file "setup/elpa.el")
 (augustl-load-file "setup/ido.el")
 (augustl-load-file "setup/diff.el")
