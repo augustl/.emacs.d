@@ -3,3 +3,5 @@
 /init.el
 /session.*
 /elpa
+/image-dired
+/eshell
