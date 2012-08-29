@@ -10,6 +10,7 @@
 (augustl-load-file "setup/ruby.el")
 (augustl-load-file "setup/lisps.el")
 (augustl-load-file "setup/magit.el")
+(augustl-load-file "setup/assorted-keybindings.el")
 
 
 (add-to-list 'load-path (concat dotfiles-dir "/modes/rhtml"))
