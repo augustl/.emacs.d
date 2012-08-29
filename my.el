@@ -28,6 +28,8 @@
 (require 'buster-mode)
 
 (add-to-list 'auto-mode-alist '("\\.jspx$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.dtm$" . clojure-mode))
 
 ;; Start EDITOR server.
 (server-force-delete)
