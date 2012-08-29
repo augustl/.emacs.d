@@ -8,6 +8,7 @@
 (augustl-load-file "setup/diff.el")
 (augustl-load-file "setup/java.el")
 (augustl-load-file "setup/ruby.el")
+(augustl-load-file "setup/lisps.el")
 
 
 (add-to-list 'load-path (concat dotfiles-dir "/modes/rhtml"))
