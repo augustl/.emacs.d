@@ -9,6 +9,7 @@
 (augustl-load-file "setup/java.el")
 (augustl-load-file "setup/ruby.el")
 (augustl-load-file "setup/lisps.el")
+(augustl-load-file "setup/magit.el")
 
 
 (add-to-list 'load-path (concat dotfiles-dir "/modes/rhtml"))
