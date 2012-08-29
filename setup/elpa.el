@@ -28,3 +28,6 @@
 (augustl-require-package 'scala-mode)
 (augustl-require-package 'apache-mode)
 (augustl-require-package 'coffee-mode)
+(augustl-require-package 'paredit)
+(augustl-require-package 'magit)
+(augustl-require-package 'slime)
