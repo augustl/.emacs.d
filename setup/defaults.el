@@ -30,6 +30,7 @@
   (tooltip-mode -1)
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
+  (menu-bar-mode -1)
   (custom-set-variables '(scroll-bar-mode (quote right))))
 
 
