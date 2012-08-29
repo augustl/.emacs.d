@@ -55,11 +55,6 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;: Black colors.
-(when window-system
-  (add-to-list 'default-frame-alist '(background-color . "#000000"))
-  (add-to-list 'default-frame-alist '(foreground-color . "#dddddd"))
-  (set-face-background 'hl-line "#222222"))
-
 ;; Make dired reuse same buffer when selecting something
 (put 'dired-find-alternate-file 'disabled nil)
+
