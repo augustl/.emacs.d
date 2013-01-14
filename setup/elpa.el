@@ -31,3 +31,4 @@
 (augustl-require-package 'paredit)
 (augustl-require-package 'magit)
 (augustl-require-package 'slime)
+(augustl-require-package 'exec-path-from-shell)

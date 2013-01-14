@@ -35,3 +35,6 @@
 ;; Start EDITOR server.
 (server-force-delete)
 (server-start)
+
+;; Get path from shell configs.
+(exec-path-from-shell-initialize)
