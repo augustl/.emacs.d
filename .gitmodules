@@ -10,3 +10,6 @@
 [submodule "modes/buster-mode"]
 	path = modes/buster-mode
 	url = git://gitorious.org/buster/buster-mode.git
+[submodule "extensions/perspective-el"]
+	path = extensions/perspective-el
+	url = git://github.com/magnars/perspective-el.git
