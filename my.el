@@ -11,6 +11,7 @@
 (augustl-load-file "setup/lisps.el")
 (augustl-load-file "setup/magit.el")
 (augustl-load-file "setup/assorted-keybindings.el")
+(augustl-load-file "setup/groovy.el")
 (augustl-load-file "themes/normal.el")
 
 
