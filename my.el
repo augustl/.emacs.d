@@ -12,7 +12,10 @@
 (augustl-load-file "setup/magit.el")
 (augustl-load-file "setup/assorted-keybindings.el")
 (augustl-load-file "setup/groovy.el")
-(augustl-load-file "themes/normal.el")
+
+(when (or (and (boundp 'augustl-force-theme) augustl-force-theme) window-system)
+  (message "Loading theme")
+  (augustl-load-file "themes/normal.el"))
 
 
 (add-to-list 'load-path (concat dotfiles-dir "/modes/rhtml"))
