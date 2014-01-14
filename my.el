@@ -42,8 +42,8 @@
 (add-to-list 'auto-mode-alist '("\\.dtm$" . clojure-mode))
 
 ;; Start EDITOR server.
-(server-force-delete)
-(server-start)
+(load "server")
+(unless (server-running-p) (server-start))
 
 ;; Get path from shell configs.
 (exec-path-from-shell-initialize)

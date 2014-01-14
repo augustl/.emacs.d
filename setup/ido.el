@@ -6,4 +6,5 @@
       ido-auto-merge-work-directories-length nil
       ido-create-new-buffer 'always
       ido-use-virtual-buffers t
+      ido-case-fold t
       ido-handle-duplicate-virtual-buffers 2)
