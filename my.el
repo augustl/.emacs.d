@@ -29,10 +29,7 @@
 (require 'recall-position)
 (global-set-key (kbd "C-c C-s") 'toggle-buffer-pos)
 
-(add-to-list 'load-path (concat dotfiles-dir "/extensions/perspective-el"))
-(require 'perspective)
 (persp-mode t)
-;; (global-set-key (kbd "C-c C-s") 'toggle-buffer-pos)
 
 (add-to-list 'load-path (concat dotfiles-dir "/modes/buster-mode"))
 (require 'buster-mode)
