@@ -29,8 +29,6 @@
 (require 'recall-position)
 (global-set-key (kbd "C-c C-s") 'toggle-buffer-pos)
 
-(persp-mode t)
-
 (add-to-list 'load-path (concat dotfiles-dir "/modes/buster-mode"))
 (require 'buster-mode)
 
@@ -44,3 +42,19 @@
 
 ;; Get path from shell configs.
 (exec-path-from-shell-initialize)
+
+
+;; Fix ido
+(require 'flx-ido)
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+;; disable ido faces to see flx highlights.
+(setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
+
+
+;; Projectile
+(projectile-global-mode)
+(setq projectile-enable-caching t)
+(setq projectile-remember-window-configs t)

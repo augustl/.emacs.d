@@ -33,5 +33,6 @@
 (augustl-require-package 'exec-path-from-shell)
 (augustl-require-package 'groovy-mode)
 (augustl-require-package 'nrepl)
-(augustl-require-package 'persp-mode)
+(augustl-require-package 'projectile)
+(augustl-require-package 'flx-ido)
 
