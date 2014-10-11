@@ -6,16 +6,16 @@
   (interactive)
   (remove-overlays nil nil 'my-highlight-overlay t))
 
-(defun my-highlight-get-current-overlay-ranges ()
+(defun my-highlight-get-my-overlays ()
   (let* ((xs-pairs (overlay-lists))
-         (xs (append (cdr xs-pairs) (car xs-pairs)))
-         (res '()))
-    (while xs
-      (-when-let (x (car xs))
-        (when (overlay-get x 'my-highlight-overlay)
-          (!cons (list (overlay-start x) (overlay-end x)) res)))
-      (!cdr xs))
-    res))
+         (xs (append (cdr xs-pairs) (car xs-pairs))))
+    (--filter (overlay-get it 'my-highlight-overlay) xs)))
+
+(defun my-highlight-get-current-overlay-ranges ()
+  (reverse
+   (--map
+    (list (overlay-start it) (overlay-end it))
+    (my-highlight-get-my-overlays))))
 
 (defun my-highlight-get-current-overlay-gaps ()
   (-partition 2 (-butlast (cdr (apply 'append (my-highlight-get-current-overlay-ranges))))))
