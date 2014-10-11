@@ -12,7 +12,7 @@
     (--filter (overlay-get it 'my-highlight-overlay) xs)))
 
 (defun my-highlight-get-current-overlay-ranges ()
-  (reverse
+  (nreverse
    (--map
     (list (overlay-start it) (overlay-end it))
     (my-highlight-get-my-overlays))))
