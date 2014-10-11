@@ -2,9 +2,6 @@
   '((((class color)) (:foreground "gray15")))
   "Face for my-highlight background")
 
-(defun my-highlight-clear-overlays ()
-  (remove-overlays nil nil 'my-highlight-overlay t))
-
 (defun my-highlight-destroy ()
   (interactive)
   (my-highlight-clear-overlays))
@@ -25,7 +22,7 @@
 
 (defun my-highlight-range (range-start range-end range-min range-max)
   (let ((current-gaps (my-highlight-get-current-overlay-gaps)))
-    (my-highlight-clear-overlays)
+    (my-highlight-destroy)
     (let ((ol (make-overlay range-min range-max)))
       (overlay-put ol 'my-highlight-overlay t)
       (overlay-put ol 'face 'my-highlight-bg-face))
