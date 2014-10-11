@@ -20,10 +20,10 @@
 (defun my-highlight-get-current-overlay-gaps ()
   (-partition 2 (-butlast (cdr (apply 'append (my-highlight-get-current-overlay-ranges))))))
 
-(defun my-highlight-range (range-start range-end range-min range-max)
+(defun my-highlight-range (range-start range-end)
   (let ((current-gaps (my-highlight-get-current-overlay-gaps)))
     (my-highlight-destroy)
-    (let ((ol (make-overlay range-min range-max)))
+    (let ((ol (make-overlay (point-min) (point-max))))
       (overlay-put ol 'my-highlight-overlay t)
       (overlay-put ol 'face 'my-highlight-bg-face))
     (remove-overlays range-start range-end 'my-highlight-overlay t)
@@ -33,11 +33,11 @@
 
 (defun my-highlight-current-line ()
   (interactive)
-  (my-highlight-range (line-beginning-position) (line-end-position) (point-min) (point-max)))
+  (my-highlight-range (line-beginning-position) (line-end-position)))
 
 (defun my-highlight-region ()
   (interactive)
-  (my-highlight-range (region-beginning) (region-end) (point-min) (point-max))
+  (my-highlight-range (region-beginning) (region-end))
   (goto-char (region-beginning))
   (deactivate-mark))
 
