@@ -28,7 +28,7 @@
       (overlay-put ol 'face 'my-highlight-bg-face))
     (remove-overlays range-start range-end 'my-highlight-overlay t)
     (--each current-gaps
-      (remove-overlays (car it) (car (cdr it)) 'my-highlight-overlay t))
+      (remove-overlays (car it) (cadr it) 'my-highlight-overlay t))
     (message (prin1-to-string current-gaps))))
 
 (defun my-highlight-current-line ()
