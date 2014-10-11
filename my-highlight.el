@@ -4,7 +4,7 @@
 
 (defun my-highlight-destroy ()
   (interactive)
-  (my-highlight-clear-overlays))
+  (remove-overlays nil nil 'my-highlight-overlay t))
 
 (defun my-highlight-get-current-overlay-ranges ()
   (let* ((xs-pairs (overlay-lists))
