@@ -35,4 +35,5 @@
 (augustl-require-package 'nrepl)
 (augustl-require-package 'projectile)
 (augustl-require-package 'flx-ido)
+(augustl-require-package 'dash)
 
