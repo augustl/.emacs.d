@@ -30,9 +30,6 @@
 (require 'recall-position)
 (global-set-key (kbd "C-c C-s") 'toggle-buffer-pos)
 
-(add-to-list 'load-path (concat dotfiles-dir "/modes/buster-mode"))
-(require 'buster-mode)
-
 (add-to-list 'auto-mode-alist '("\\.jspx$" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.dtm$" . clojure-mode))
