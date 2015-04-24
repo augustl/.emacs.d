@@ -1,3 +1,5 @@
+(augustl-require-package 'magit)
+
 ;; change magit diff colors
 (eval-after-load 'magit
   '(progn
