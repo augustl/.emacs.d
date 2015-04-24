@@ -1,4 +1,6 @@
 (augustl-require-package 'flx-ido)
+(augustl-require-package 'ido-ubiquitous)
+(augustl-require-package 'ido-vertical-mode)
 
 (require 'ido)
 (ido-mode t)
@@ -13,9 +15,17 @@
 
 
 (require 'flx-ido)
-(ido-mode 1)
-(ido-everywhere 1)
 (flx-ido-mode 1)
 ;; disable ido faces to see flx highlights.
-(setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
+
+(ido-mode 1)
+(ido-everywhere 1)
+(setq ido-enable-flex-matching t)
+
+(require 'ido-ubiquitous)
+(ido-ubiquitous-mode 1)
+
+(require 'ido-vertical-mode)
+(ido-vertical-mode)
+(setq ido-vertical-define-keys 'C-n-C-p-up-down-left-right)
