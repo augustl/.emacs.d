@@ -12,6 +12,7 @@
 (augustl-load-file "setup/magit.el")
 (augustl-load-file "setup/assorted-keybindings.el")
 (augustl-load-file "setup/groovy.el")
+(augustl-load-file "setup/projectile.el")
 (augustl-load-file "my-highlight.el")
 
 (when (or (and (boundp 'augustl-force-theme) augustl-force-theme) window-system)
@@ -40,19 +41,3 @@
 
 ;; Get path from shell configs.
 (exec-path-from-shell-initialize)
-
-
-;; Fix ido
-(require 'flx-ido)
-(ido-mode 1)
-(ido-everywhere 1)
-(flx-ido-mode 1)
-;; disable ido faces to see flx highlights.
-(setq ido-enable-flex-matching t)
-(setq ido-use-faces nil)
-
-
-;; Projectile
-(projectile-global-mode)
-(setq projectile-enable-caching t)
-(setq projectile-remember-window-configs t)
