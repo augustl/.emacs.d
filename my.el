@@ -13,6 +13,7 @@
 (augustl-load-file "setup/assorted-keybindings.el")
 (augustl-load-file "setup/groovy.el")
 (augustl-load-file "setup/projectile.el")
+(augustl-load-file "setup/flycheck.el")
 (augustl-load-file "my-highlight.el")
 
 (when (or (and (boundp 'augustl-force-theme) augustl-force-theme) window-system)
