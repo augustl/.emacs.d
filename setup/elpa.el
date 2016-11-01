@@ -5,7 +5,7 @@
  '("elpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list
  'package-archives
- '("marmalade" . "http://marmalade-repo.org/packages/"))
+ '("marmalade" . "https://marmalade-repo.org/packages/"))
 
 (defun augustl-require-package (package &optional no-refresh)
   "If a package is not installed, install it. If package is not found, refresh first."
