@@ -1,5 +1,5 @@
 (augustl-require-package 'clojure-mode)
-(augustl-require-package 'clojurescript-mode)
+;; (augustl-require-package 'clojurescript-mode)
 ;; (augustl-require-package 'nrepl)
 
 (add-hook 'clojure-mode-hook
