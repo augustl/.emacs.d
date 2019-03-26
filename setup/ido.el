@@ -1,5 +1,5 @@
 (augustl-require-package 'flx-ido)
-(augustl-require-package 'ido-ubiquitous)
+;(augustl-require-package 'ido-ubiquitous)
 (augustl-require-package 'ido-vertical-mode)
 
 (require 'ido)
@@ -23,8 +23,8 @@
 (ido-everywhere 1)
 (setq ido-enable-flex-matching t)
 
-(require 'ido-ubiquitous)
-(ido-ubiquitous-mode 1)
+;(require 'ido-ubiquitous)
+; (ido-ubiquitous-mode 1)
 
 (require 'ido-vertical-mode)
 (ido-vertical-mode)
