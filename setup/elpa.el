@@ -1,11 +1,7 @@
 (package-initialize)
 
-(add-to-list
- 'package-archives
- '("elpa" . "http://melpa.milkbox.net/packages/"))
-(add-to-list
- 'package-archives
- '("marmalade" . "https://marmalade-repo.org/packages/"))
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
 
 (defun augustl-require-package (package &optional no-refresh)
   "If a package is not installed, install it. If package is not found, refresh first."
