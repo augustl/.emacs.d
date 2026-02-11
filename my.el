@@ -8,7 +8,7 @@
 
 (augustl-load-file "setup/defaults.el")
 (augustl-load-file "setup/elpa.el")
-(augustl-load-file "setup/ido.el")
+(augustl-load-file "setup/completion.el")
 (augustl-load-file "setup/diff.el")
 (augustl-load-file "setup/lisps.el")
 (augustl-load-file "setup/clojure.el")

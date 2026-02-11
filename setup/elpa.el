@@ -23,4 +23,7 @@
 (augustl-require-package 'coffee-mode)
 (augustl-require-package 'exec-path-from-shell)
 (augustl-require-package 'dash)
-
+(augustl-require-package 'vertico)
+(augustl-require-package 'orderless)
+(augustl-require-package 'marginalia)
+(augustl-require-package 'consult)
