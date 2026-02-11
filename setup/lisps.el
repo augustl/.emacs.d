@@ -1,4 +1,3 @@
-(augustl-require-package 'paredit)
-
-(add-hook 'lisp-mode-hook #'paredit-mode)
-(add-hook 'emacs-lisp-mode-hook #'paredit-mode)
+(use-package paredit
+  :hook ((lisp-mode . paredit-mode)
+         (emacs-lisp-mode . paredit-mode)))

@@ -54,6 +54,9 @@
 ;; Typing with active region replaces content in region
 (delete-selection-mode 1)
 
+;; Remember cursor positions in files
+(save-place-mode 1)
+
 ;; UTF-8 all the things!
 (setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)

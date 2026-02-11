@@ -1,20 +1,25 @@
-(augustl-require-package 'vertico)
-(augustl-require-package 'orderless)
-(augustl-require-package 'marginalia)
-(augustl-require-package 'consult)
+(use-package savehist
+  :ensure nil
+  :init
+  (savehist-mode 1))
 
-(vertico-mode 1)
-(savehist-mode 1)
+(use-package vertico
+  :init
+  (vertico-mode 1)
+  (setq vertico-cycle t))
 
-(setq vertico-cycle t)
+(use-package orderless
+  :init
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides
+        '((file (styles basic partial-completion)))))
 
-(setq completion-styles '(orderless basic)
-      completion-category-defaults nil
-      completion-category-overrides
-      '((file (styles basic partial-completion))))
+(use-package marginalia
+  :init
+  (marginalia-mode 1))
 
-(marginalia-mode 1)
-
-(global-set-key (kbd "C-c s l") #'consult-line)
-(global-set-key (kbd "C-c s r") #'consult-ripgrep)
-(global-set-key (kbd "M-y") #'consult-yank-pop)
+(use-package consult
+  :bind (("C-c s l" . consult-line)
+         ("C-c s r" . consult-ripgrep)
+         ("M-y" . consult-yank-pop)))

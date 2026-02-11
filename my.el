@@ -20,13 +20,15 @@
   (message "Loading theme")
   (augustl-load-file "themes/normal.el"))
 
-
-(require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(use-package yaml-mode
+  :mode "\\.yml\\'")
 
 ;; Start EDITOR server.
-(load "server")
+(require 'server)
 (unless (server-running-p) (server-start))
 
 ;; Get path from shell configs.
-(exec-path-from-shell-initialize)
+(use-package exec-path-from-shell
+  :if (memq window-system '(mac ns x))
+  :config
+  (exec-path-from-shell-initialize))

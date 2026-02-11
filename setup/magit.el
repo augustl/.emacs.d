@@ -1,1 +1,1 @@
-(augustl-require-package 'magit)
+(use-package magit)
