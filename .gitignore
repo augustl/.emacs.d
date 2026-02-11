@@ -1,6 +1,7 @@
 /auto-save-list/*
 /tramp
-/init.el
+/custom.el
+/local.el
 /session.*
 /elpa
 /image-dired

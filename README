@@ -1,9 +1,15 @@
 Installing
 ==========
 
-1. cd ~
-2. git clone git://github.com/augustl/.emacs.d.git
-3. cp .emacs.d/init.example.el .emacs.d/init.el
-4. cd .emacs.d
-5. git submodule update --init
-6. Put custom stuff in the gitignored .emacs.d/init.el.
+1. `cd ~`
+2. `git clone git://github.com/augustl/.emacs.d.git`
+3. Optional machine-specific settings:
+   - `cp ~/.emacs.d/local.example.el ~/.emacs.d/local.el`
+   - Edit `local.el` (for example `augustl-font-height`) as needed.
+
+Notes
+=====
+
+- `custom.el` and `local.el` are gitignored.
+- `init.el` is checked in.
+- No git submodules are required.

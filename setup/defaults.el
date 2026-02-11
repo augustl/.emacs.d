@@ -31,7 +31,13 @@
   (mouse-wheel-mode t)
   (blink-cursor-mode -1)
   (menu-bar-mode -1)
-  (custom-set-variables '(scroll-bar-mode (quote right))))
+  (let ((font-family (or (and (boundp 'augustl-font-family) augustl-font-family)
+                        "Inconsolata"))
+        (font-height (or (and (boundp 'augustl-font-height) augustl-font-height)
+                        150)))
+    (set-face-attribute 'default nil :family font-family :height font-height))
+  (when (fboundp 'set-scroll-bar-mode)
+    (set-scroll-bar-mode 'right)))
 
 
 ;; Highlight current line
@@ -57,4 +63,3 @@
 
 ;; Make dired reuse same buffer when selecting something
 (put 'dired-find-alternate-file 'disabled nil)
-

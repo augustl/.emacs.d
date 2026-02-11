@@ -2,6 +2,10 @@
 (defun augustl-load-file (name)
   (load-file (concat dotfiles-dir "/" name)))
 
+(let ((local-file (concat dotfiles-dir "/local.el")))
+  (when (file-exists-p local-file)
+    (load-file local-file)))
+
 (augustl-load-file "setup/defaults.el")
 (augustl-load-file "setup/elpa.el")
 (augustl-load-file "setup/ido.el")
