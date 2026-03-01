@@ -15,6 +15,7 @@
 (augustl-load-file "setup/magit.el")
 (augustl-load-file "setup/assorted-keybindings.el")
 (augustl-load-file "setup/projectile.el")
+(augustl-load-file "setup/markdown.el")
 
 (when (or (and (boundp 'augustl-force-theme) augustl-force-theme) window-system)
   (message "Loading theme")
